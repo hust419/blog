@@ -1,4 +1,3 @@
-.wp-playlist-caption, .wp-playlist-current-item .wp-playlist-item-artist, .wp-playlist-current-item .wp-playlist-item-title, .wp-playlist-item-album {text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
 .mejs-container {clear: both;}
 .mejs-container * {font-family: Helvetica,Arial;}
 .mejs-container, .mejs-container .mejs-controls, .mejs-embed, .mejs-embed body {background: #222;}
@@ -28,15 +27,15 @@
 .wp-admin .wp-playlist {margin: 0 0 18px;}
 .wp-playlist video {display: inline-block;max-width: 100%;}
 .wp-playlist audio {display: none;max-width: 100%;width: 400px;}
-.wp-playlist-caption, .wp-playlist-item-meta {display: block;font-size: 14px;line-height: 1.5;}
 .wp-playlist .mejs-container {margin: 0;width: 100%;}
 .wp-playlist .mejs-controls .mejs-button button {outline: 0;}
 .wp-playlist-light {background: #fff;color: #000;}
 .wp-playlist-dark {color: #fff;background: #000;}
-.wp-playlist-caption {max-width: 88%;}
+.wp-playlist-caption {display: block;max-width: 88%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;font-size: 14px;line-height: 1.5;}
 .wp-playlist-item .wp-playlist-caption {text-decoration: none;color: #000;max-width: -webkit-calc(100% - 40px);max-width: calc(100% - 40px);}
+.wp-playlist-item-meta {display: block;font-size: 14px;line-height: 1.5;}
 .wp-playlist-item-title {font-size: 14px;line-height: 1.5;}
-.wp-playlist-item-album {font-style: italic;}
+.wp-playlist-item-album {font-style: italic;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 .wp-playlist-item-artist {font-size: 12px;text-transform: uppercase;}
 .wp-playlist-item-length {position: absolute;right: 3px;top: 0;font-size: 14px;line-height: 1.5;}
 .rtl .wp-playlist-item-length {left: 3px;right: auto;}
@@ -51,4 +50,5 @@
 .wp-playlist-current-item {overflow: hidden;margin-bottom: 10px;height: 60px;}
 .wp-playlist .wp-playlist-current-item img {float: left;max-width: 60px;height: auto;margin-right: 10px;padding: 0;border: 0;}
 .rtl .wp-playlist .wp-playlist-current-item img {float: right;margin-left: 10px;margin-right: 0;}
+.wp-playlist-current-item .wp-playlist-item-artist, .wp-playlist-current-item .wp-playlist-item-title {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
 .wp-audio-playlist .me-cannotplay span {padding: 5px 15px;}
